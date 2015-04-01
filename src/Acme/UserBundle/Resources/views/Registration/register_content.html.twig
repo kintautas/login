@@ -1,0 +1,17 @@
+<div class="container">
+	<div class="row row-centered">
+		<div class="col-md4 col-centered">
+			<h2>Registration</h2>
+		</div>
+	</div>
+	<div class="row row-centered">
+		<div class="col-md4 col-centered">
+			<form action="{{ path('fos_user_registration_register') }}" {{ form_enctype(form) }} method="POST" class="fos_user_registration_register">
+				{{ form_widget(form) }}
+				<div>
+					<input type="submit" value="{{ 'registration.submit'|trans({}, 'FOSUserBundle') }}" />
+				</div>
+			</form>
+		</div>
+	</div>
+</div>

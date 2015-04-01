@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+    <head>
+	  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css">
+  <style>
+	.row-centered{
+		text-align:center;
+	}
+	.col-centered{
+		display:inline-block;
+		float:none;
+		text-align:left;
+		margin-right:-4px;
+		}
+  </style>
+        <meta charset="UTF-8" />
+        <title>{% block title %}Welcome!{% endblock %}</title>
+        {% block stylesheets %}{% endblock %}
+        <link rel="icon" type="image/x-icon" href="{{ asset('favicon.ico') }}" />
+    </head>
+    <body>
+        {% block body %}{% endblock %}
+        {% block javascripts %}{% endblock %}
+    </body>
+</html>
